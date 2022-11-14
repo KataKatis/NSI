@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Formulaire 1</title>
+</head>
+<body>
+
+
+<form action="Sauvegarde.html" name="F1" method="POST"> <!-- Commentaire -->
+	<p>
+	<font face="romans" size=5>
+		<h2><center>Formulaire d'inscription</center></h2>
+		Nom, Prénom : <input type="text" name="nom_Prenom"><br>
+		Genre :
+			<input type="radio" name="Genre"> M
+			<input type="radio" name="Genre"> F <br>
+		Email : <input type="text" name="email" size=100><br>
+		Votre Bac :
+			<select name="Bac">
+				<option Selected> Choisir </option>
+				<option> Info </option>
+				<option> Maths </option>
+				<option> Lettres </option>
+			</select><br>
+		Vos options :
+			<input type="checkbox" name="Mus"> Musique
+			<input type="checkbox" name="Th"> Théâtre
+			<input type="checkbox" name="Des"> Dessin <br>
+		Commentaires : <br>
+			<textarea name="zone_libre" rows=5 cols=40></textarea><br>
+			<input type="reset" value="Effacer et recommencer"><br>
+			<input type="button" value="Pour vérifier tapez ici" name="Bouton_Controle"><br>
+			<input type="submit" value="Envoyer">
+	</font>
+	</p>
+</form>
+</body>
+
+</html>

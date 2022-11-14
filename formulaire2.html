@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Formulaire 2</title>
+</head>
+<style>
+	body {
+		background-color : #bdc3c7;
+	}
+
+	form {
+		border-style: solid;
+		border-color: red;
+		border-width: 2px;
+		padding : 10px
+	}
+</style>
+<body>
+
+
+<form action="Sauvegarde2.html" name="F1" method="POST">
+	<p>
+	<h1><u>Formulaire type</u></h1>
+	<font face="Times New Roman" size=3>
+		<h2>Coordonnées</h2>
+		<b>Nom</b> <br><input type="text" name="Nom"><br><br>
+		<b>Prénom</b> <br><input type="text" name="Prenom"><br><br>
+		<b>Je désire recevoir une documentation</b> <input type="checkbox" name="doc"><br><br>
+		<b>Pays</b>
+			<select name="country">
+				<option Selected> CH: Suisse </option>
+				<option> FR: France </option>
+			</select> <br><br>
+		<b>Sexe</b> 	<input type="radio" name="Genre"> Masculin
+		     	<input type="radio" name="Genre"> Féminin <br>
+		<h2>Domaines(s) d'activité</h2>
+		Vous pouvez en choisir plus d'un... <br>
+		<input type="checkbox" name="Pedagogie"> Pédagogie
+		<input type="checkbox" name="Psychologie"> Psychologie
+		<input type="checkbox" name="Informatique"> Informatique
+		<input type="checkbox" name="Autre"> Autre <br><br>
+		<b>Commentaire</b><br><br>
+		Si vous le voulez, vous pouvez décrire vos activités ou intérets <br><br>
+		<textarea name="zone_libre" rows=5 cols=40></textarea><br><br>
+		<input type="reset" value="Effacer les données"><input type="submit" value="Enregistrer les données">
+	</p>
+	</font>
+</form>
+<table border=1 cellspacing=10 cellpadding=10>
+	<tr bgcolor="yellow" align="center">
+		<td> A </td>
+		<td> K </td>
+	</tr>
+	<tr>
+		<td> 4 </td>
+		<td> 7 </td>
+	</tr>
+</table>
+</body>
+</html>
