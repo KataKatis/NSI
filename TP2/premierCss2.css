@@ -38,7 +38,7 @@ section {
 	font-size : 20px;
 	font-variant : normal; /* normal "small caps" */
 	font-style : normal; /* normal italix */
-	font-weight : 300;
+	font-weight : 300; /* bolder lighter */
 	text-align : left;
 	text-decoration : none; /* underline overline line-through */
 	text-shadow : 2px green;
@@ -59,7 +59,7 @@ section {
 	font-size : 20px;
 	font-variant : small caps; /* normal "small caps" */
 	font-style : normal; /* normal italix */
-	font-weight : 100;
+	font-weight : 100; /* bolder lighter */
 	text-align : left;
 	text-decoration : none; /* underline overline line-through */
 	text-shadow : 2px green;
@@ -139,10 +139,24 @@ td {
     top : 400px ;
 }
 
-#portrait {
-    position: absolute; /* sort du flux classique, position en brut par rapport a la page entiere */
-    top :0px ; 
-    left :0px ;
-    width : 100px;
-    height : 100px
+#ma_photo { /* figure tag */
+	position : absolute; /* sort du flux classique, position en brut par rapport a la page entiere */
+	margin : 0px;
+	top : 0px;
+	right : 0px;
+	border : solid;
+	z-index: 15;
+}
+
+#portrait { 
+    width : 250px;
+    height : 250px;
+}
+
+#description_moi {
+	color : #6ab04c;
+	margin: auto;
+	font-family : sans-serif; /* georgia sans-serif prestige Cursive */
+	font-size : 20px;
+	font-weight : bolder; /* bolder lighter */
 }
