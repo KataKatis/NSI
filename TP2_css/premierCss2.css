@@ -1,0 +1,162 @@
+section {
+   background-color :gray ;
+}
+
+#boite1 { 
+	background-color:rgb(200,0,0);
+	position: relative; /* absolute relative fixe */
+	width : 200px;
+	/*height : 200px;*/
+	padding : 30px;
+	margin : auto;
+	z-index : 10; /* plus il est eleve, plus il est au premier plan */
+	overflow: auto; /* auto scroll hidden visible */
+	border-style: solid; /* solid dotted dashed double groove ridge inset outset none hidden*/
+	border-width: 10px; 
+	border-color: #000000;
+}
+
+#boite2 { 
+	background-color:rgb(0,150,0);
+	position: absolute; /* absolute relative fixe */
+	width: 200px;
+	/*height: 200px;*/
+	padding: 30px;
+	top: 100px;
+	left: 100px;
+	z-index: 5; /* plus il est eleve, plus il est au premier plan */
+	border-style: solid; /* solid dotted dashed double groove ridge inset outset none hidden*/
+	border-width: 10px;
+	border-color: #000000;
+}
+
+.p1 { 
+	color :#CCBDFA;
+	background-color: white;
+	padding: 5px;
+	font-family : Serif; /* georgia sans-serif prestige Cursive */
+	font-size : 20px;
+	font-variant : normal; /* normal "small caps" */
+	font-style : normal; /* normal italix */
+	font-weight : 300; /* bolder lighter */
+	text-align : left;
+	text-decoration : none; /* underline overline line-through */
+	text-shadow : 2px green;
+	text-transform : lowercase; /* uppercase lowercase capitalize */
+	word spacing : 5px;
+	border: solid; /* solid dotted dashed double groove ridge inset outset none hidden*/
+	border-width: 2px;
+	border-color: #000;
+}
+
+.p2 {
+	color : #DC37C7;
+	background-color: white;
+	width: 80%;
+	padding: 5px;
+	margin: auto;
+	font-family : Serif; /* georgia sans-serif prestige Cursive */
+	font-size : 20px;
+	font-variant : small caps; /* normal "small caps" */
+	font-style : normal; /* normal italix */
+	font-weight : 100; /* bolder lighter */
+	text-align : left;
+	text-decoration : none; /* underline overline line-through */
+	text-shadow : 2px green;
+	text-transform : lowercase; /* uppercase lowercase capitalize */
+	word spacing : 2px;
+	border: dotted; /* solid dotted dashed double groove ridge inset outset none hidden*/
+	border-width: 2px;
+	border-color: #000;
+}
+
+p:first-letter {
+	font-size :300% ;
+}
+.p2:before{
+	content: "#";
+}
+.p1:after{
+	content : "♥♥♥";
+}
+
+
+nav {
+	width:100%;
+	position:fixed;
+	z-index: 15; /* plus il est eleve, plus il est au premier plan */
+}
+
+nav li  {
+    width : 20%;
+    border: solid; /* && */
+    text-transform : uppercase;
+    text-align:center;
+    list-style-type: none; /* enleve points */
+    float:left ;
+
+}
+
+nav a {
+      text-decoration:none;
+}
+
+nav a:hover {
+	background-color: #C60;
+}
+
+
+table  {
+     width : 900px ; 
+     border : solid; /* solid dotted dashed double groove ridge inset outset none hidden*/
+     border-collapse: collapse;
+}
+
+caption {
+	caption-side: bottom;
+	font-size : 60px;
+}
+
+th {
+	background-color: #8e44ad;
+    border: 2px solid black; /* solid dotted dashed double groove ridge inset outset none hidden*/
+	font-size : 20px;
+	text-decoration : underline; /* underline overline line-through */
+}
+td {
+	border: 2px solid green; /* solid dotted dashed double groove ridge inset outset none hidden*/
+	font-family : fantasy; /* georgia sans-serif prestige Cursive */
+	font-style : italic; /* normal italix */
+	text-align : right;
+}
+
+
+#boite3 {
+    background-color:red;
+    position : relative ; /* positionner la boite par rapport au contenu précédent */
+    width : 80%; /* &&largeur 80% de la page pour pas que ça dépasse */
+    left : 20% ; 
+    top : 400px ;
+}
+
+#ma_photo { /* figure tag */
+	position : absolute; /* sort du flux classique, position en brut par rapport a la page entiere */
+	margin : 0px;
+	top : 0px;
+	right : 0px;
+	border : solid;
+	z-index: 15;
+}
+
+#portrait { 
+    width : 250px;
+    height : 250px;
+}
+
+#description_moi {
+	color : #6ab04c;
+	margin: auto;
+	font-family : sans-serif; /* georgia sans-serif prestige Cursive */
+	font-size : 20px;
+	font-weight : bolder; /* bolder lighter */
+}
