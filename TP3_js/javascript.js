@@ -10,9 +10,32 @@ while (!isNaN(note)) {
 	count += 1;
 	note = parseFloat(prompt('Note (moyenne actuelle = ' + (moyenne/(count-1)) + '): '));
 }
-alert('Votre moyenne finale est: ' + (moyenne/(count-1)));
-document.write('Votre moyenne finale est: ' + (moyenne/(count-1)))
-
+average = (moyenne/(count-1))
+if (average >= 10) {
+	var msg = "Votre moyenne finale est: " + average + ". Vous êtes admis ";
+	switch (true) {
+		case average == 10:
+			msg += "avec mention: sniper";
+			break;
+		case average >= 18:
+			msg += "avec mention: Excellent";
+			break;
+		case average >= 16:
+			msg += "avec mention: Félécitation";
+			break;
+		case average >= 14:
+			msg += "avec mention: Bien";
+			break;
+		default:
+			msg += "sans mention.";
+			break;
+	}
+	alert(msg);
+	document.write(msg);
+} else {
+	alert('Votre moyenne finale est: ' + average + ". Vous n'êtes pas admis.");
+	document.write('Votre moyenne finale est: ' + average + ". Vous n'êtes pas admis.");
+}
 
 // EXERCICE 2
 
